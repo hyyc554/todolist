@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LuffyToDoList</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <form  id="form">
+                <label class="site-name" for="title">LuffyToDoList</label>
+                <input class="text" type="text" name="text" id="add_list" required="required">
+                <button onclick="newElement()" class="addBtn">GO！</button>
+                <label for="text" class="key-word" id="key-word">添加待办事项</label>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h2>正在进行 <span id="todocount"></span></h2>
+			<ul id="myUL" class="demo-box">
+			</ul>
+			<h2>已经完成 <span id="donecount"></span></h2>
+			<ul id="donelist">
+            </ul>
+            <div class="btn-top">
+            <button id="clear">清除所有</button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="./js/javascript.js"></script>
+
+</html>
